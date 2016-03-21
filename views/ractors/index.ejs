@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<% include ../partials/head %>
+	</head>
+	<body class="container">
+		<header>
+			<% include ../partials/header %>
+		</header>
+		
+		<main>
+			<div class="jumbotron">
+
+			<div>
+		
+		
+		<table class="table table-hover">
+		<% for(var i=0; i < actors.length; i++) { %>
+		   <tr>
+		     <td><%= actors[i].id %></td>
+			 <td><%= actors[i].name %></td>
+
+			 <td><a href="/message/edit/<%= actors[i].id %>"> edit </a></td>
+			 <td><a href="/message/delete/<%= actors[i].id %>"> delete </a></td>
+		   </tr>
+		<% } %>
+		</table>
+		</main>
+		
+		<footer>
+			<% include ../partials/footer %>
+		</footer>
+	</body>
+</html>

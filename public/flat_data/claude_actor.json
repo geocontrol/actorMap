@@ -1,0 +1,256 @@
+var actors = [
+{
+id: 0,
+     name: "Provider",
+     scale: 18.5,
+     green: 17,
+     blue: 4,
+yellow: 0,
+orange: 0,
+white: 0
+},
+{
+id: 1,
+     name: "Client",
+     scale: 1.5,
+     green: 0,
+     blue: 0,
+yellow: 1,
+orange: 0,
+white: 0
+},
+{
+id: 3,
+     name: "TV",
+     scale: 20,
+     green: 16,
+     blue: 0,
+yellow: 4,
+orange: 0,
+white: 0
+},
+{
+id: 12,
+     name: "Cloud",
+     scale: 15,
+     green: 9,
+     blue: 0,
+yellow: 4,
+orange: 0,
+white: 2
+},
+{
+id: 15,
+     name: "Bank",
+     scale: 40,
+     green: 40,
+     blue: 0,
+yellow: 0,
+orange: 0,
+white: 0
+},
+{
+id: 20,
+     name: "Children",
+     scale: 0.5,
+     green: 0,
+    blue: 0,
+yellow: 0,
+orange: 0,
+white: 0
+},
+{
+id: 23,
+     name: "Partner 23",
+     scale: 7,
+     green: 7,
+     blue: 0,
+yellow: 0,
+orange: 0,
+white: 0
+},
+{
+id: 26,
+     name: "Partner 26",
+     scale: 1.8,
+     green: 0,
+     blue: 0,
+yellow: 1,
+orange: 0,
+white: 0
+},
+{
+id: 27,
+     name: "Intervention event",
+     scale: 0.5,
+     green: 0,
+     blue: 0,
+yellow: 0,
+orange: 0,
+white: 0
+},
+{
+id: 28,
+     name: "Intervention pathway",
+     scale: 1.75,
+     green: 0,
+     blue: 0,
+yellow: 1.25,
+orange: 0,
+white: 0
+},
+{
+id: 29,
+     name: "Partner 29",
+     scale: 0.9,
+     green: 0,
+     blue: 0,
+yellow: 0,
+orange: 0,
+white: 0
+},
+{
+order: 30,
+     name: "Staff at Partner 23",
+     scale: 1,
+     green: 0,
+     blue: 0,
+yellow: 0,
+orange: 0,
+white: 0
+},
+{
+id: 31,
+     name: "Staff at LRS",
+     scale: 0.25,
+     green: 0,
+     blue: 0,
+yellow: 0.25,
+orange: 0,
+white: 0
+},
+{
+id: 32,
+     name: "Partner HA",
+     scale: 19.75,
+     green: 15,
+     blue: 0,
+yellow: 0.5,
+orange: 0,
+white: 0
+},
+{
+id: 33,
+     name: "Partner 33",
+     scale: 5.5,
+     green: 1.5,
+     blue: 0,
+yellow: 2.25,
+orange: 0,
+white: 0
+},
+{
+id: 34,
+     name: "Partner 34",
+     scale: 5.5,
+     green: 1.5,
+     blue: 0,
+yellow: 2.25,
+orange: 0,
+white: 0
+},
+{
+id: 35,
+     name: "Partner 35",
+     scale: 5.5,
+     green: 1.5,
+     blue: 0,
+yellow: 2.25,
+orange: 0,
+white: 0
+},
+{
+id: 36,
+     name: "Energy Provider",
+     scale: 16,
+     green: 8,
+     blue: 6,
+yellow: 0,
+orange: 0,
+white: 0
+},
+{
+id: 38,
+     name: "Government",
+     scale: 49.75,
+     green: 34,
+     blue: 6,
+yellow: 0,
+orange: 0,
+white: 0
+},
+{
+id: 39 = Scale: Income source (4.75)[green 2]
+
+id: 43,
+     name: "Partner bridge1",
+     scale: 4,
+     green: 0,
+     blue: 0,
+yellow: 4,
+orange: 0,
+white: 0
+},
+{
+id: 44,
+     name: "Partner bridge2",
+     scale: 16,
+     green: 0,
+     blue: 0,
+yellow: 16,
+orange: 0,
+white: 0
+},
+{
+id: 45,
+     name: "Troubleshooter",
+     scale: 8.25,
+     green: 0,
+     blue: 0,
+yellow: 1,
+orange: 2.5,
+white: 0
+},
+{
+id: 47,
+     name: "Carer",
+     scale: 1.5,
+     green: 0,
+     blue: 0,
+yellow: 0,
+orange: 0,
+white: 0
+];
+
+var data = [
+
+id: 8 = Scale: Data TV to Card (2.25)[blue 2.25]
+id: 10 = Scale: Data Remote to TV (1)[blue 1]
+id: 13 = Scale: Data TV to Cloud (1.25)[blue 1.25]
+id: 16 = Scale: Account (9.25)[blue 9.25]
+id: 18 = Scale: Data Cloud to LRS (0.5)[blue 0.5]
+id: 19 = Scale: Data LRS to Partner 23 (0.8)[blue 0.8]
+id: 22 = Scale: Data Bank to Cloud (0.5)[blue 0.5]
+id: 37 = Scale: Data Bill to Client (2.5)[blue 2.5]
+id: 40 = Scale: Welfare benefits (2.75)[blue 2]
+id: 46 = Scale: Data Troubleshooter to Partners (1.75)[blue 1.75]
+
+var infra = [
+id: 2 = Scale: Card (13)[green 13]
+id: 4 = Scale: Remote (2)[green 2]
+id: 6 = Scale: Antenna on TV (7)[green 4][blue 0.75]
+id: 7 = Scale: Antenna on Card (7)[green 4][blue 0.75]
+id: 11 = Scale: Raspberry Pi (2.25)[blue 2.25]
+id: 25 = Scale: LRS Server (1)[green 1]
+id: 41 = Scale: Government systems (6)[blue 6]
+id: 42 = Scale: Additional cards (2)[green 2]

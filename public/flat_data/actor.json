@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"name":"mark","group":1},
+		{"name":"claude","group":1},
+		{"name":"customer","group":2}
+	],
+	"links":[
+		{"source":1,"target":0,"value":1},
+		{"source":1,"target":2,"value":1},
+		{"source":0,"target":2,"value":1}
+	]
+}

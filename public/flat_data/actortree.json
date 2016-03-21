@@ -1,0 +1,30 @@
+{
+ "name": "mark",
+ "children": [
+	{
+	 	"name": "external",
+		"children": [
+			{"name":"customer", "size":1},
+			{"name":"auditor", "size":1}
+		]
+	},
+	{
+		"name": "internal",
+		"children": [
+			{
+				"name": "accounting",
+				"children": [
+					{"name":"Jeffry", "size":1},
+					{"name":"CRM System", "size":1}
+				]
+			},
+			{
+				"name": "customer service",
+				"children": [
+					{"name":"CRM System", "size":1}
+				]
+			}
+		]
+	}
+ ]
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<% include partials/head %>
+	</head>
+	<body class="container">
+		<header>
+			<% include partials/header %>
+		</header>
+		
+		<main>
+			<div class="jumbotron">
+
+			<div>
+		
+        <form method="post" action="/relationships">
+		 
+           <% if(typeof(errorMessage) !== 'undefined') {%>
+              <span><%= errorMessage %></span>
+           <% } %>
+		 
+           <div class="form-group">
+              <label for="source">Source</label>
+              <select id="source" name="source" size="1">
+			  	<% actors.forEach(function(actor) { %>
+					<option value="<%= actor.id %>"><%= actor.name %></option>
+				<% }) %>
+			  </select>
+				 
+              <label for="target">Target</label>
+              <select id="target" name="target" size="1">
+			  	<% actors.forEach(function(actor) { %>
+					<option value="<%= actor.id %>"><%= actor.name %></option>
+				<% }) %>
+			  </select>
+				 
+              <label for="type">Type</label>
+              <input type="text" class="form-control" name="type" id="type"
+                 placeholder="type" required="true"/>
+           </div>
+		   
+	          <p>
+	             <button type="submit" name="submit" id="submit" class="btn btn-default">Add</button>
+	          </p>
+			
+	       </form>
+		
+		<a href='/ractors'>Add actors</a>
+		
+		<h2>Relationships</h2>
+		<table class="table table-hover">
+		<% relationships.forEach(function(relationship) { %>
+		   <tr>
+		     <td><%= relationship.id %></td>
+			 <td><%= relationship.source_id %></td>
+			 <td><%= relationship.target_id %></td>
+			 <td><%= relationship.type %></td>
+			 <td><a href="<%= relationship.id %>"> edit </a></td>
+			 <td><a href="<%= relationship.id %>"> delete </a></td>
+		   </tr>
+		<% }); %>
+		</table>
+		</main>
+		
+		<footer>
+			<% include partials/footer %>
+		</footer>
+	</body>
+</html>
