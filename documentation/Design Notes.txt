@@ -1,0 +1,31 @@
+CySeCa and related projects - analysis tools
+
+Outline
+This work is to find the best tool set to be able to structurally analyse the outputs of workshops as developed in CySeCa, including the lived experience comic strips, the co-created lego models and the card mapping exercises. The outcomes of these workshops are relatively unstructured, and can be difficult to interpret unless you were involved in their creation.
+
+What is needed is a way of high ligting the strutcured elements of the outcomes, and to be able to visulaise these structures in various ways for presentation and analysis. 
+
+Components of outputs
+The workshops generate artefacts, models, comic strips and system maps. All of these are created within rules and structures that are generated and owned by the workshop participants.
+
+There are though a number of elements that are common across the workshops and 
+
+Field : this is the space in which the work is created, within the frames of the comic strips, which can either represent a spatial or geographical 
+
+Witin the maps and models space is also conflated, some areas are demarcated whilst others are assumed.
+
+Actors:
+
+Rules:
+
+
+Assets:
+
+
+Software Components:
+
+node.js
+d3.js
+
+databases:
+Experimenting with the various database types, relational, document and graph
